@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        LOGIN|SIGNUP
+    </title>
+    <link rel="stylesheet" href="style2_18aug.css">
+    <script>
+        function loadlogin() {
+            document.getElementById('login-popup').style.visibility = "visible";
+            document.getElementById('signup-popup').style.visibility = "hidden";
+        }
+        function loadsignup() {
+            document.getElementById('login-popup').style.visibility = "hidden";
+            document.getElementById('signup-popup').style.visibility = "visible";
+        }
+    </script>
+</head>
+
+<body>
+    <br><br><br><br><br>
+    <center>
+        <button class="btn" onclick="loadlogin()">LOGIN</button>|
+        <button class="btn" onclick="loadsignup()">SIGNUP</button>
+    </center>
+    <div class="login-sheet" id="login-popup" style="visibility: hidden;">
+        Login Page
+        <table align="center" width="60%" border=1 bgcolor="lightgreen" cellpadding="20px" style="text-align: center;
+    border:1px solid green; border-collapse: collapse;">
+            <center>
+                <image src="images/register.png'.png" width="10%"></image>
+            </center>
+            <tr>
+                <td align="center" colspan="2">
+                    <font color="red" size="12+" face="gerogia">Login Here</font>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>Name</h3>
+                </td>
+                <td><input type="text" name="name" id="name" placeholder="Enter your name" required> </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Password</h3>
+                </td>
+                <td><input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Address</h3>
+                </td>
+                <td>
+                    <textarea name="add" id="address" placeholder="Enter your address" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="submit this form" name="submit" id="submit">
+
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+    <div class="signup-sheet" id="signup-popup" style="visibility: hidden;">
+        Signup Page
+        <br>
+        <table align="center" width="60%" border=1 bgcolor="lightgreen" cellpadding="20px" style="text-align: center;
+    border:1px solid green; border-collapse: collapse;">
+            <center>
+                <image src="images/register.png'.png" width="10%"></image>
+            </center>
+            <tr>
+                <td align="center" colspan="2">
+                    <font color="red" size="12+" face="gerogia">Online Shopping Portal</font>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>Name</h3>
+                </td>
+                <td><input type="text" name="name" id="name" placeholder="Enter your name" required> </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Email</h3>
+                </td>
+                <td><input type="text" name="email" id="email" placeholder="Enter your Email-Id" required> </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>Address</h3>
+                </td>
+                <td><textarea name="addressarea" id="addressarea" placeholder="Enter address" required></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Pincodee</h3>
+                </td>
+                <td><input type="number" name="pcd" id="pcd" placeholder="enter your pincode" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>
+                        Date Of Birth
+                    </h3>
+                </td>
+                <td>
+                    <input type="date" name="date" id="date" placeholder="Enter your date" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>Gender</h3>
+                </td>
+                <td> <select name="gender" id="gender">
+                        <option value="0">----select gender-----</option>
+                        <option value="M"> Male </option>
+                        <option value="F"> Female </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <a href="home.html"><input type="submit" value="submit this form"></a>
+
+                    <input type="reset" value="reset the form">
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+</body>
+
+</html>
